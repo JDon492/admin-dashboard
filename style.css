@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Montserrat&family=PT+Sans&display=swap');
+
+:root {
+    font-family: 'Montserrat', 'Merriweather Sans', 'PT Sans', sans-serif;
+    --main-dashboard-bg: #9147ff;
+    --main-dashboard-text: #f3f3f3;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    min-height: 100vh;
+    display: grid;
+    grid-template: auto 4fr / 1fr 4fr;
+}
+
+/* Sidebar */
+
+.sideboard {
+    background-color: var(--main-dashboard-bg);
+    color: var(--main-dashboard-text);
+    grid-area: 1 / 1 / -1 / 2;
+    display: grid;
+    grid-template: auto auto 1fr / 1fr;
+    padding: 1em;
+}
+
+li a,
+nav a {
+    text-decoration: none;
+    color: var(--main-dashboard-text);
+}
+
+.sideboard ul {
+    padding: 0;
+}
+
+.sideboard li {
+    list-style-type: none;
+    font-weight: bold;
+    border: 5px solid transparent;
+    padding: 6px 0px;
+}
+
+.sideboard li a,
+.header-dash {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.sideboard li p {
+    margin: 0px;
+}
+
+.github-link {
+    font-size: smaller;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.github-link img {
+    height: 2rem;
+}
