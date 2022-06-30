@@ -4,6 +4,8 @@
     font-family: 'Montserrat', 'Merriweather Sans', 'PT Sans', sans-serif;
     --main-dashboard-bg: #9147ff;
     --main-dashboard-text: #f3f3f3;
+    --main-head-background: #f3f3f3;
+    --main-head-color: #0e0e10;
 }
 
 body {
@@ -26,8 +28,7 @@ body {
     padding: 1em;
 }
 
-li a,
-nav a {
+.sideboard a {
     text-decoration: none;
     color: var(--main-dashboard-text);
 }
@@ -64,3 +65,60 @@ nav a {
 .github-link img {
     height: 2rem;
 }
+
+/* Headboard */
+
+.headboard {
+    grid-area: 1 / 2 / 2 / -1;
+    display: grid;
+    grid-template: auto 1fr / 2fr 1fr;
+    background-color: var(--main-head-background);
+    color: var(--main-head-color);
+}
+
+/* Search Bar */
+
+.headboard .search-bar {
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.headboard .search-bar input {
+    border-radius: 8px;
+    padding: 0.3rem;
+    border: none;
+    background-color: darkgray;
+}
+
+.search-bar form,
+.search-bar input {
+    display: flex;
+    width: 100%;
+}
+
+#search-bar::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    cursor: pointer;
+    height: 1rem;
+    width: 1rem;
+    background: url(./img/close.png);
+    background-size: contain;
+}
+
+.search-bar button,
+.search-bar button img {
+    border: none;
+    background-color: var(--main-head-background);
+    opacity: 0.6;
+    height: 1.5rem;
+    cursor: pointer;
+    transition: all 100ms ease-in-out;
+}
+
+.search-bar img:active {
+    opacity: 1;
+}
+
+/* Profile */
+
