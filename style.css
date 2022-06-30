@@ -170,3 +170,33 @@ body {
     grid-area: 1 / 1 / -1 / 2;
 }
 
+/* User Buttons */
+
+.user-buttons {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.user-buttons button {
+    border: 0;
+    background-color: var(--main-dashboard-bg);
+    color: var(--main-dashboard-text);
+    font-weight: bold;
+    font-size: 1rem;
+    width: 6rem;
+    height: 2rem;
+    border-radius: 22px;
+    transition: transform .2s ease-in-out;
+    cursor: pointer;
+}
+
+.user-buttons button:hover {
+    transform: scale(1.05);
+}
+
+.user-buttons button:active {
+    transform: scale(1);
+    opacity: 0.9;
+}
