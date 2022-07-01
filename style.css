@@ -215,7 +215,7 @@ body {
 
 .main-container {
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 3fr 300px;
     padding-bottom: 2rem;
     background-color: var(--content-background);
 }
@@ -367,8 +367,8 @@ body {
 
 .trending {
     display: grid;
-    grid-template: auto auto / 1fr 2fr ;
-    gap: 4px 8px;
+    grid-template: auto auto / auto 2fr ;
+    gap: 4px 16px;
 }
 
 .trending-tile {
